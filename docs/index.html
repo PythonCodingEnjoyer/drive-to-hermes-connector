@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drive-to-hermes-connector — личное подключение Google Drive</title>
+<meta name="description" content="Описание личного подключения Google Drive, Docs и Sheets к локальному Hermes, его разрешений и правил использования данных.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">К содержанию</a>
+<header><div class="wrap topline"><a class="brand" href="index.html">drive-to-hermes-connector</a><nav aria-label="Основная навигация"><a href="index.html" aria-current="page">О подключении</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></div></header>
+<main id="content" class="wrap">
+<p class="eyebrow">Личная интеграция · Google Workspace</p>
+<h1>Google Drive в рабочем процессе Hermes</h1>
+<p class="lead"><strong>drive-to-hermes-connector</strong> — личное подключение владельца репозитория. Оно позволяет локальному Hermes работать с Google Drive, Google Docs и Google Sheets после разрешения пользователя.</p>
+<div class="layout"><article class="prose">
+<h2>Для чего нужен доступ</h2>
+<p>Пользователь может поручить Hermes найти файл, прочитать документ или таблицу, подготовить новый документ и сохранить результат на своём диске. Подключение использует официальные Google API от имени авторизованного пользователя.</p>
+<ul><li><strong>Drive:</strong> поиск, чтение и операции с файлами по заданию пользователя.</li><li><strong>Docs:</strong> чтение, создание и редактирование документов.</li><li><strong>Sheets:</strong> чтение, создание и редактирование таблиц.</li></ul>
+<p>Разрешения могут охватывать весь доступный аккаунту Drive. Изменение, удаление и предоставление доступа к файлам требуют указания пользователя. Для этой конфигурации доступ к Gmail и календарю не запрашивается.</p>
+<div class="note"><p><strong>Это справочный сайт, а не онлайн-хранилище.</strong> На нём нет формы входа в Google. Авторизация и запуск подключения происходят в локальном приложении; документы, OAuth JSON и токены не публикуются здесь.</p></div>
+<h2>Где обрабатываются данные</h2>
+<p>OAuth-данные хранятся на компьютере пользователя. Если для выполнения задания нужна модель ИИ, относящиеся к задаче данные могут передаваться настроенному пользователем провайдеру — например, GPT/Kimi. Локальное хранение авторизации не означает полностью офлайн-обработку.</p>
+<p>Подробности о передаче, локальной истории, сроках хранения и отзыве доступа приведены в <a href="privacy.html">политике конфиденциальности</a>.</p>
+<section id="contact" class="rule"><h2>Связь</h2><p>Технические вопросы можно оставить в <a href="https://github.com/PythonCodingEnjoyer/drive-to-hermes-connector/issues">Issues репозитория</a>. Обращения публичны: не прикладывайте документы, пароли, токены и другие личные данные.</p></section>
+</article><aside class="side" aria-label="Сведения о сайте"><h2>Прозрачное подключение</h2><p>Личное использование.<br>Без отдельного облачного сервера подключения.<br>Без загрузки архива на этот сайт.</p><a href="privacy.html">Как используются данные →</a><a href="terms.html">Условия использования →</a><a href="https://github.com/PythonCodingEnjoyer/drive-to-hermes-connector">Исходники справочного сайта ↗</a></aside></div>
+</main>
+<footer><div class="wrap"><p><strong>drive-to-hermes-connector</strong> · независимая пользовательская интеграция, не официальный продукт Google или Nous Research.</p><div class="footerlinks"><a href="index.html">Главная</a><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a></div></div></footer>
+</body></html>
